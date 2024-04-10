@@ -1352,6 +1352,8 @@ minio:
   image:
     # -- Minio image used by Minio helm chart
     repository: minio/minio
+    # -- The pull policy to use for the airbyte cron image
+    pullPolicy: IfNotPresent
     # -- Minio tag image
     tag: RELEASE.2023-11-20T22-40-07Z
 

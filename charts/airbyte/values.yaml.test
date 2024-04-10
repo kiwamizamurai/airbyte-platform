@@ -1395,6 +1395,7 @@ minio:
   ## image.tag Minio tag image
   image:
     repository: minio/minio
+    pullPolicy: IfNotPresent
     tag: latest
 
   auth:

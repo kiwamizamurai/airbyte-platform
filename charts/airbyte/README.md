@@ -201,6 +201,7 @@ Helm chart to deploy airbyte
 | minio.enabled | bool | `true` |  |
 | minio.endpoint | string | `"http://airbyte-minio-svc:9000"` |  |
 | minio.image.repository | string | `"minio/minio"` | Minio image used by Minio helm chart |
+| minio.image.pullPolicy | string | `"IfNotPresent"` | The pull policy to use for Minio image |
 | minio.image.tag | string | `"RELEASE.2023-11-20T22-40-07Z"` | Minio tag image |
 | minio.nodeSelector | object | `{}` | Node labels for pod assignment, see https://kubernetes.io/docs/user-guide/node-selection/ # |
 | minio.storage.volumeClaimValue | string | `"500Mi"` |  |
